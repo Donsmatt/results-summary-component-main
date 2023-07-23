@@ -110,11 +110,11 @@ body {
   border: 0;
   border-radius: 100vw;
   cursor: pointer;
+}
 
-  &:hover,
-  &:focus-visible {
-    background: var(--gradient-primary);
-  }
+.button:hover,
+.button:focus-visible {
+  background: var(--gradient-primary);
 }
 
 .result-summary {
@@ -155,14 +155,14 @@ body {
   border-radius: 50%;
   display: grid;
   place-content: center;
+}
 
-  & span {
-    display: block;
-    font-size: var(--fs-900);
-    font-weight: var(--fw-black);
-    line-height: 1;
-    color: var(--clr-neutral-100);
-  }
+.result-score span {
+  display: block;
+  font-size: var(--fs-900);
+  font-weight: var(--fw-black);
+  line-height: 1;
+  color: var(--clr-neutral-100);
 }
 
 .result-rank {
@@ -182,40 +182,43 @@ body {
   padding: 1rem;
   border-radius: 0.5rem;
   background-color: hsl(var(--item-color), 0.1);
+}
 
-  & svg {
-    stroke: hsl(var(--item-color));
-  }
 
-  & .summary-item-title {
-    color: hsl(var(--item-color));
-    font-weight: var(--fw-bold);
-  }
+.summary-item svg {
+  stroke: hsl(var(--item-color));
+}
 
-  & .summary-score {
-    font-weight: var(--fw-black);
-    color: hsl(var(--clr-neutral-hsl-700), .7);
+.summary-item-title {
+  color: hsl(var(--item-color));
+  font-weight: var(--fw-bold);
+}
 
-    & span {
-      color: var(--clr-neutral-700);
-    }
-  }
+.summary-score {
+  font-weight: var(--fw-black);
+  color: hsl(var(--clr-neutral-hsl-700), .7);
 
-  &[data-item-type="accent-1"] {
-    --item-color: var(--clr-accent-1);
-  }
 
-  &[data-item-type="accent-2"] {
-    --item-color: var(--clr-accent-2);
-  }
+}
 
-  &[data-item-type="accent-3"] {
-    --item-color: var(--clr-accent-3);
-  }
+.summary-score span {
+  color: var(--clr-neutral-700);
+}
 
-  &[data-item-type="accent-4"] {
-    --item-color: var(--clr-accent-4);
-  }
+.summary-item[data-item-type="accent-1"] {
+  --item-color: var(--clr-accent-1);
+}
+
+.summary-item[data-item-type="accent-2"] {
+  --item-color: var(--clr-accent-2);
+}
+
+.summary-item[data-item-type="accent-3"] {
+  --item-color: var(--clr-accent-3);
+}
+
+.summary-item[data-item-type="accent-4"] {
+  --item-color: var(--clr-accent-4);
 }
 
 /* UTILITY STYLES */
@@ -225,9 +228,11 @@ body {
   align-content: start;
   gap: 1rem;
 
-  &[data-spacing="large"] {
-    gap: 2rem;
-  }
+}
+
+
+.grid-flow[data-spacing="large"] {
+  gap: 2rem;
 }
 
 .flex-group {
